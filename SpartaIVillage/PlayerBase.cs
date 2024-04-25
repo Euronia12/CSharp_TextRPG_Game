@@ -140,6 +140,7 @@ namespace SpartaIVillage
         //아이템 판매
         public void SaleItem(int itemNum)
         {
+            MainGame.Instance.storage.dicItems[itemNum].bIsHave = false;
             RemoveEquipItem(MainGame.Instance.storage.dicItems[Itemlst[itemNum]]);
             dicEquiment[MainGame.Instance.storage.dicItems[Itemlst[itemNum]].myEquipType] = -1;
             nGold += (int)(MainGame.Instance.storage.dicItems[Itemlst[itemNum]].nPrice * 0.85);
