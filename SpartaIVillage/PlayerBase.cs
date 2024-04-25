@@ -1,4 +1,4 @@
-﻿using SpartaIVillage.ItemClass;
+﻿ using SpartaIVillage.ItemClass;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -50,7 +50,7 @@ namespace SpartaIVillage
             nDefence = 5;
             nHealth = 100;
             nMaxHp = nHealth;
-            nGold = 51500;
+            nGold = 1500;
             bIsInit = true;
             for (int i = 0; i < (int)Define.EquipmentType.e_MaxNumber; i++)
             {
